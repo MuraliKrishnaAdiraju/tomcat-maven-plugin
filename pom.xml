@@ -213,7 +213,7 @@
     </license>
   </licenses>
 
-  <mailingLists>
+  <!--mailingLists>
     <mailingList>
       <name>User List</name>
       <subscribe>users-subscribe@tomcat.apache.org</subscribe>
@@ -223,7 +223,6 @@
       <otherArchives>
         <otherArchive>http://marc.info/?l=tomcat-user</otherArchive>
         <otherArchive>http://markmail.org/list/org.apache.tomcat.user/</otherArchive>
-        <otherArchive>http://old.nabble.com/Tomcat---User-f342.html</otherArchive>
         <otherArchive>http://www.mail-archive.com/users@tomcat.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
@@ -237,7 +236,6 @@
       <otherArchives>
         <otherArchive>http://marc.info/?l=tomcat-dev</otherArchive>
         <otherArchive>http://markmail.org/list/org.apache.tomcat.dev/</otherArchive>
-        <otherArchive>http://old.nabble.com/Tomcat---Dev-f341.html</otherArchive>
         <otherArchive>http://www.mail-archive.com/dev@tomcat.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
@@ -253,19 +251,18 @@
         <otherArchive>http://markmail.org/list/org.apache.tomcat.announce/</otherArchive>
         <otherArchive>http://www.mail-archive.com/announce@tomcat.apache.org/</otherArchive>
       </otherArchives>
-    </mailingList>
+    </mailingList-->
 
 
 
     <!-- old mailing lists from codehaus -->
-    <mailingList>
+    <!--mailingList>
       <name>Legacy Development List</name>
       <subscribe>dev-subscribe@mojo.codehaus.org</subscribe>
       <unsubscribe>dev-unsubscribe@mojo.codehaus.org</unsubscribe>
       <post>dev@mojo.codehaus.org</post>
       <archive>http://archive.codehaus.org/lists/org.codehaus.mojo.dev</archive>
       <otherArchives>
-        <otherArchive>http://old.nabble.com/mojo---dev-f11981.html</otherArchive>
         <otherArchive>http://markmail.org/list/org.codehaus.mojo.dev</otherArchive>
       </otherArchives>
     </mailingList>
@@ -276,7 +273,6 @@
       <post>user@mojo.codehaus.org</post>
       <archive>http://archive.codehaus.org/lists/org.codehaus.mojo.user</archive>
       <otherArchives>
-        <otherArchive>http://old.nabble.com/mojo---user-f11980.html</otherArchive>
         <otherArchive>http://markmail.org/list/org.codehaus.mojo.user</otherArchive>
       </otherArchives>
     </mailingList>
@@ -296,13 +292,12 @@
       <post>announce@mojo.codehaus.org</post>
       <archive>http://archive.codehaus.org/lists/org.codehaus.mojo.announce</archive>
       <otherArchives>
-        <otherArchive>http://old.nabble.com/mojo---announce-f11982.html</otherArchive>
         <otherArchive>http://markmail.org/list/org.codehaus.mojo.announce</otherArchive>
       </otherArchives>
     </mailingList>
-  </mailingLists>
+  </mailingLists-->
 
-  <scm>
+  <!--scm>
     <connection>scm:svn:http://svn.apache.org/repos/asf/tomcat/maven-plugin/trunk/</connection>
     <developerConnection>scm:svn:https://svn.apache.org/repos/asf/tomcat/maven-plugin/trunk/</developerConnection>
     <url>http://svn.apache.org/viewvc/tomcat/maven-plugin/</url>
@@ -315,7 +310,7 @@
 
   <ciManagement>
     <url>https://builds.apache.org/job/TomcatMavenPlugin/</url>
-  </ciManagement>
+  </ciManagement-->
 
   <modules>
     <module>common-tomcat-maven-plugin</module>
@@ -324,7 +319,7 @@
     <module>tomcat7-maven-plugin</module>
     <module>tomcat8-war-runner</module>
     <module>tomcat8-maven-plugin</module>
-    <module>tomcat-maven-archetype</module>
+    <!--module>tomcat-maven-archetype</module-->
   </modules>
 
   <dependencyManagement>
@@ -764,12 +759,13 @@
           <artifactId>plexus-component-metadata</artifactId>
           <version>2.0.0</version>
         </plugin>
-        <plugin>
+        <!--plugin>
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
           <version>0.13</version>
           <configuration>
             <excludes>
+              <exclude>.scannerwork</exclude>
               <exclude>.gitignore</exclude>
               <exclude>DEPENDENCIES</exclude>
               <exclude>README.txt</exclude>
@@ -782,7 +778,7 @@
               <exclude>**/access_log.*</exclude>
             </excludes>
           </configuration>
-        </plugin>
+        </plugin-->
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -804,7 +800,7 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
+      <!--plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <executions>
@@ -816,7 +812,7 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>

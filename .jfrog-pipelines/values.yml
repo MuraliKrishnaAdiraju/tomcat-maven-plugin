@@ -1,0 +1,5 @@
+gitProvider: VA_GHE
+artifactory: VA_DEV_ARTI
+repoPath: VA_DEV_ARTI/sbo-cicd-maven-dev-local
+deployerSSRepo: sbo-cicd-maven-dev-local
+deployerRelRepo: sbo-cicd-maven-release-local
