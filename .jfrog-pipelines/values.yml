@@ -1,5 +1,5 @@
 gitProvider: VM_GHE
 artifactory: VA_DEV_ARTI
-repoPath: VM_GHE/MuraliKrishnaAdiraju/tomcat-maven-plugin
+repoPath: VM_GHE/tomcat-maven-plugin
 deployerSSRepo: sbo-cicd-maven-dev-local
 deployerRelRepo: sbo-cicd-maven-release-local
