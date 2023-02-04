@@ -19,7 +19,7 @@ pipelines:
       - name: mvn_build_step
         type: MvnBuild
         configuration:
-          mvnCommand: clean install -Drat.skip=true -DskipTests=true
+          mvnCommand: clean install -Drat.skip=true -DskipTests -DskipITs
           deployerSnapshotRepo: {{ .Values.deployerSSRepo }}
           deployerReleaseRepo: {{ .Values.deployerRelRepo }}
           inputResources:
